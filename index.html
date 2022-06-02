@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="icon" href="style/assets/foto.png" />
+    <title>Pizza Mantul</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="style/assets/logo.svg" alt="" />
+        </div>
+        <ul class="nav-list" id="navi-list">
+          <li class="list-item"><a href="#section1">Home</a></li>
+          <li class="list-item"><a href="#section2">Menu</a></li>
+          <li class="list-item"><a href="#aside">About</a></li>
+        </ul>
+        <div class="menu" id="toggle-button">
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+          <div class="menu-line"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==================== main =================== -->
+    <main>
+      <div id="content">
+        <article>
+          <section id="section1">
+            <div class="pizza-hero">
+              <img src="style/assets/pizza-hero.png" alt="pizza-hero" />
+            </div>
+            <div class="container-textHero">
+              <h1>PIZZA MANTUL</h1>
+              <p>
+                Pizza Mantul merupakan singkatan dari Pizza<br />
+                Mantap Betul. Karena dengan ciri khasnya yang<br />
+                membuat ketagihan.
+              </p>
+              <div type="button" class="btnOrdernow">Order Now</div>
+            </div>
+            <img
+              class="decoration"
+              src="style/assets/decoration.svg"
+              alt="decoration"
+            />
+          </section>
+          <section id="section2">
+            <h1>Menu</h1>
+            <hr />
+            <div class="container-picture">
+              <!-- ============================================================= -->
+              <div class="container_open_modal">
+                <button
+                  type="button"
+                  class="btnopenModal1"
+                  ini="#target_pizza1"
+                >
+                  <img
+                    class="pizza1"
+                    src="style/assets/pizza1.png"
+                    alt="pizza1"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="btnopenModal2"
+                  ini="#target_pizza2"
+                >
+                  <img
+                    class="pizza2"
+                    src="style/assets/pizza2.png"
+                    alt="pizza2"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="btnopenModal3"
+                  ini="#target_pizza3"
+                >
+                  <img
+                    class="pizza3"
+                    src="style/assets/pizza3.png"
+                    alt="pizza3"
+                  />
+                </button>
+              </div>
+
+              <div class="container_open_modal">
+                <button
+                  type="button"
+                  class="btnopenModal4"
+                  ini="#target_pizza4"
+                >
+                  <img
+                    class="pizza4"
+                    src="style/assets/pizza4.png"
+                    alt="pizza4"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="btnopenModal5"
+                  ini="#target_pizza5"
+                >
+                  <img
+                    class="pizza5"
+                    src="style/assets/pizza5.png"
+                    alt="pizza5"
+                  />
+                </button>
+                <button
+                  type="button"
+                  class="btnopenModal6"
+                  ini="#target_pizza6"
+                >
+                  <img
+                    class="pizza6"
+                    src="style/assets/pizza6.png"
+                    alt="pizza6"
+                  />
+                </button>
+              </div>
+            </div>
+          </section>
+        </article>
+        <aside id="aside">
+          <img class="foto" src="style/assets/foto.png" alt="foto" />
+
+          <h1>Restu Oktafiandi</h1>
+          <p>
+            Pemilik Perusahaan Pizza Mantul<br />
+            yang tinggal disebuah kota Cianjur<br />
+            dibawah kaki Gunung Gede Pangrango
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <!-- ==================== footer =================== -->
+    <footer>
+      <div class="container1">
+        <div class="footerLeft">
+          <h3>Contact :</h3>
+          <div class="footerLeft-child">
+            <span
+              class="iconify"
+              data-icon="ri:whatsapp-fill"
+              style="color: #f8f8f8"
+            ></span>
+            <p>1234 5678 91011</p>
+          </div>
+          <div class="footerLeft-child">
+            <span
+              class="iconify"
+              data-icon="akar-icons:facebook-fill"
+              style="color: #f8f8f8"
+            ></span>
+            <p>pizzamantul</p>
+          </div>
+          <div class="footerLeft-child">
+            <span
+              class="iconify"
+              data-icon="ant-design:instagram-filled"
+              style="color: #f8f8f8"
+            ></span>
+            <p>pizzamantul</p>
+          </div>
+          <div class="footerLeft-child">
+            <span
+              class="iconify"
+              data-icon="eva:email-fill"
+              style="color: #f8f8f8"
+            ></span>
+            <p>pizzamantul123@gmail.com</p>
+          </div>
+        </div>
+        <div class="footerRight">
+          <h3>Lokasi</h3>
+          <div class="footerRight-child">
+            <span
+              class="iconify"
+              data-icon="ci:location"
+              style="color: #f8f8f8"
+            ></span>
+            <p>
+              Jl. Nyalindung,<br />
+              Desa Nyalindung, Cugenang<br />
+              Cianjur
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <p>@copyright by restuoktafiandi</p>
+      </div>
+    </footer>
+
+    <!-- ========================================= modal box ======================================-->
+    <!-- modal box -->
+    <div class="modal_box" id="target_pizza1">
+      <div class="modal_content">
+        <button class="close" ini="#target_pizza1">&times;</button>
+        <div class="modal_head">
+          <img
+            class="modal_pizza1"
+            src="style/assets/pizza1.png"
+            alt="pizza1"
+          />
+          <h3>Pizza Wortel</h3>
+        </div>
+        <div class="modal_body">
+          <p>
+            Pizza Wortel merupakan produk dari Pizza Mantul yang sangat enak
+            dengan ciri khas tersendiri dengan toping wortel yang sangat kaya
+            akan vitamin khususnya memiliki kandungan vitamin A.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal box punya pizza-2 -->
+    <div class="modal_box" id="target_pizza2">
+      <div class="modal_content">
+        <button class="close" ini="#target_pizza2">&times;</button>
+        <div class="modal_head">
+          <img
+            class="modal_pizza2"
+            src="style/assets/pizza2.png"
+            alt="pizza2"
+          />
+          <h3>Pizza Sawi</h3>
+        </div>
+        <div class="modal_body">
+          <p>
+            Pizza Sawi merupakan produk dari Pizza Mantul yang sangat enak
+            dengan ciri khas tersendiri dengan toping sawi yang merupakan
+            sayuran cocok untuk hidangan atau sarapan pagi.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal box punya pizza-3-->
+    <div class="modal_box" id="target_pizza3">
+      <div class="modal_content">
+        <button class="close" ini="#target_pizza3">&times;</button>
+        <div class="modal_head">
+          <img
+            class="modal_pizza3"
+            src="style/assets/pizza3.png"
+            alt="pizza3"
+          />
+          <h3>Pizza Sosis</h3>
+        </div>
+        <div class="modal_body">
+          <p>
+            Pizza Sosis merupakan produk dari Pizza Mantul yang sangat enak
+            dengan ciri khas tersendiri dengan toping sawi potongan sosis yang
+            terbuat dari daging sapi, cocok untuk mengganjal perut dan cemilan
+            sehari-hari.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal box punya-4 -->
+    <div class="modal_box" id="target_pizza4">
+      <div class="modal_content">
+        <button class="close" ini="#target_pizza4">&times;</button>
+        <div class="modal_head">
+          <img
+            class="modal_pizza4"
+            src="style/assets/pizza4.png"
+            alt="pizza4"
+          />
+          <h3>Pizza Saus Tomat</h3>
+        </div>
+        <div class="modal_body">
+          <p>
+            Pizza Saus Tomat merupakan produk dari Pizza Mantul yang sangat enak
+            yang memiliki ciri khas tersendiri dengan toping saus dicampur
+            dengan potongan sosis yang merupakan perpaduan yang sangat
+            memanjakan lidah.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal box punya-5-->
+    <div class="modal_box" id="target_pizza5">
+      <div class="modal_content">
+        <button class="close" ini="#target_pizza5">&times;</button>
+        <div class="modal_head">
+          <img
+            class="modal_pizza5"
+            src="style/assets/pizza5.png"
+            alt="pizza5"
+          />
+          <h3>Pizza Cabe</h3>
+        </div>
+        <div class="modal_body">
+          <p>
+            Pizza Cabe merupakan produk dari Pizza Mantul yang sangat enak
+            dengan ciri khas tersendiri dengan toping potongan kecil cabe yang
+            merupakan pendukung untuk memanjakan lidah yang pastinya sangat enak
+            dan lezat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal box punya pizza-6-->
+    <div class="modal_box" id="target_pizza6">
+      <div class="modal_content">
+        <button class="close" ini="#target_pizza6">&times;</button>
+        <div class="modal_head">
+          <img
+            class="modal_pizza6"
+            src="style/assets/pizza6.png"
+            alt="pizza6"
+          />
+          <h3>Pizza Telur</h3>
+        </div>
+        <div class="modal_body">
+          <p>
+            Pizza Telur merupakan produk dari Pizza Mantul yang sangat enak
+            dengan ciri khas tersendiri dengan toping dibaluran telur dan bawang
+            sehingga harum dengan ciri khasnya yang dapat memanjakan lidah dan
+            cocok untuk sarapan.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="style/script/main.js"></script>
+  </body>
+</html>

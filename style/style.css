@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fec83c;
+  font-family: "Nanum Pen Script", cursive;
+  position: relative;
+}
+
+.stopScroll {
+  overflow: hidden;
+}
+
+/* =================== navbar ===================*/
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #fec83c;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #ff3d22;
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+/* =================== section1 ===================*/
+main {
+  width: 100%;
+}
+
+#section1 {
+  width: 100%;
+  display: flex;
+  padding-top: 100px;
+}
+
+.pizza-hero {
+  margin-right: 50px;
+}
+
+.pizza-hero img {
+  width: 500px;
+}
+
+.container-textHero h1 {
+  font-size: 85px;
+  font-family: "Kaushan Script", cursive;
+  color: #ff3d22;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.container-textHero p {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.btnOrdernow {
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  color: #ff3d22;
+  background-color: white;
+  text-align: center;
+  padding-top: 5px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnOrdernow:hover {
+  background-color: #ff3d22;
+  color: white;
+}
+
+.decoration {
+  width: 100%;
+  position: absolute;
+  top: 500px;
+  z-index: -1;
+}
+
+/* =================== section2 ===================*/
+#section2 {
+  width: 100%;
+  margin-top: 100px;
+  padding-top: 100px;
+  background-color: #ff3d22;
+}
+
+#section2 h1 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+#section2 hr {
+  border: 2px solid white;
+  width: 30%;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.container_open_modal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pizza1,
+.pizza2,
+.pizza3,
+.pizza4,
+.pizza5,
+.pizza6 {
+  width: 307px;
+}
+
+.btnopenModal1,
+.btnopenModal2,
+.btnopenModal3,
+.btnopenModal4,
+.btnopenModal5,
+.btnopenModal6 {
+  margin-bottom: 30px;
+  border: none;
+  background-color: unset;
+  cursor: pointer;
+}
+
+/* =================== aside ===================*/
+aside {
+  width: 100%;
+}
+
+aside {
+  width: 100%;
+  margin-top: 250px;
+  margin-bottom: 250px;
+  text-align: center;
+}
+
+aside .foto {
+  display: inline;
+  padding-top: 100px;
+  width: 300px;
+  text-align: center;
+}
+
+aside h1 {
+  font-size: 40px;
+  color: #ff3d22;
+}
+
+aside p {
+  color: white;
+  font-size: 20px;
+}
+
+/* =================== footer ===================*/
+footer {
+  width: 100%;
+  padding-top: 50px;
+  background-color: #ff3d22;
+  color: white;
+  font-size: 30px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerLeft-child,
+.footerRight-child {
+  display: flex;
+}
+
+.iconify {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  background-color: #702116;
+  height: 80px;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ================== modal pop up==================*/
+.modal_box {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal_content {
+  width: 25%;
+  background-color: white;
+  margin: 100px auto;
+  padding: 40px 30px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.modal_head h3 {
+  font-size: 30px;
+  color: #ff3d22;
+}
+
+.modal_body p {
+  font-size: 20px;
+}
+
+.modal_pizza1,
+.modal_pizza2,
+.modal_pizza3,
+.modal_pizza4,
+.modal_pizza5,
+.modal_pizza6 {
+  width: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.active_modal {
+  display: block;
+}
+
+/* =============================================== responsive ==================*/
+@media all and (max-width: 968px) {
+  .pizza-hero img {
+    width: 250px;
+  }
+  .pizza1,
+  .pizza2,
+  .pizza3,
+  .pizza4,
+  .pizza5,
+  .pizza6 {
+    width: 207px;
+    display: block;
+  }
+
+  .container-textHero h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .container-textHero p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .decoration {
+    top: 400px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+
+  .modal_content {
+    width: 60%;
+  }
+}
+
+@media all and (max-width: 568px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 15px 0px 10px 10px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  .nav-list {
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-list .list-item {
+    display: block;
+    padding: 20px 10px;
+    border-top: 2px solid white;
+  }
+
+  .btnOrdernow {
+    margin: auto;
+  }
+  .active {
+    display: block;
+  }
+
+  /* section1 */
+  #section1 {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+
+  .pizza-hero img {
+    width: 300px;
+  }
+
+  .container-textHero {
+    text-align: center;
+  }
+
+  .container-textHero h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .container-textHero p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .decoration {
+    top: 700px;
+  }
+
+  /* section2 */
+  #section2 {
+    background-color: #ff3d22;
+  }
+  .container_open_modal {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btnopenModal1,
+  .btnopenModal2,
+  .btnopenModal3,
+  .btnopenModal4,
+  .btnopenModal5,
+  .btnopenModal6 {
+    width: 207px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .pizza1,
+  .pizza2,
+  .pizza3,
+  .pizza4,
+  .pizza5,
+  .pizza6 {
+    width: 207px;
+    display: block;
+  }
+
+  /* footer */
+  footer {
+    font-size: 20px;
+  }
+
+  .iconify {
+    margin-right: 5px;
+    margin-bottom: 8px;
+  }
+
+  .footerLeft,
+  .footerRight {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+
+  .modal_content {
+    width: 80%;
+  }
+}
